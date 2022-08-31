@@ -1,0 +1,42 @@
+body {
+    background-image: url("../media/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+h1 {
+    text-align: center;
+    text-shadow: 10px;
+    font-size: 50px;
+    color: #d3f2bbc2;
+    text-decoration: double underline;
+}
+
+h2 {
+    font-size: 30px;
+    color: rgb(215, 250, 217);
+    text-decoration: underline;
+}
+
+p {
+    text-align: center;
+    color: #ecf0f1;
+    font-size : 20px;
+    
+}
+
+.content{
+    text-align: center;
+    background-color: rgb(4,124,124, 0.7);
+    background-size: auto;
+}
+
+.footer {
+    text-align: left;
+    color: #ecf0f1;
+    
+    font-size : 20px;
+}
+
