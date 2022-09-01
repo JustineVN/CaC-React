@@ -1,9 +1,7 @@
-html,body{
-    height:100%;
- }
- .carousel,.item,.active{
-    height:100%;
-  }
- .carousel-inner{
-     height:100%;
- }
+body {
+    background-image: url("../media/background4.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
