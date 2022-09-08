@@ -2,6 +2,8 @@ const color = document.querySelector(".title");
 const colorp = document.querySelector("p");
 var first = true;
 
+
+
 function colors1() {
     color.style.color="rgba(189, 14, 68, 1)"
     colorp.style.color="#edc7d3"
