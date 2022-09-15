@@ -37,3 +37,9 @@ nav ul li a{
     font-weight: bold;
     transition: 0.4s ease-in-out;
 }
+
+.btn-check {
+    color: antiquewhite;
+    background-color: blanchedalmond;
+}
+

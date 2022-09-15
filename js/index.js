@@ -1,3 +1,7 @@
+
+
+const myApp = document.getElementById(myApp);
+
 const color = document.querySelector(".title");
 const colorp = document.querySelector("p");
 var first = true;

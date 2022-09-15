@@ -38,15 +38,41 @@ nav ul li a{
     transition: 0.4s ease-in-out;
 }
 
-.video {
-    flex-direction: column;
-}
-
 #videoQ {
-    margin-top: 1rem;;
-   background-color: rgb(226, 162, 101);
+   margin-top: 1rem;;
+   background-color: rgb(231, 217, 203);
    color: black;
    width: 2cm;
 }
-
+li {
+    list-style: none;
+  }
+  
+.bg-black {
+    background-color: #000;
+  }
+  
+.grow {
+    transition: all .3s ease-in-out;
+    border-radius: 5px;
+  }
+  
+.grow:hover {
+    transform: scale3d(1.5,1.5,1);  
+  }
+  
+.yt-title {
+    color: #fff;
+    -webkit-line-clamp: 2;
+    font-family: "Roboto","Arial",sans-serif;
+    font-size: 1.125rem;
+    line-height: 1.625px;
+    font-weight: 400;
+  }
+  
+.yt-subtitle {
+    color: rgb(170,170,170);    
+    font-size: .75rem;
+    line-height: 1.125rem;  
+  }
 
