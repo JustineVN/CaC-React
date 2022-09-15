@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/Clase4.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <title>Clase 4</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark shadow-5-strong">
+        <div class="col-12 bg-light border-end border--dark">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 vw-100">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Presentation</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="hobbies.html">Hobbies</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Travel Gallery
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="italy.html">Italy</a></li>
+                    <li><a class="dropdown-item" href="reunionisland.html">Reunion Island</a></li>
+                    <li><a class="dropdown-item" href="australia.html">Australia</a></li>
+                    <li><a class="dropdown-item" href="france.html">France</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Clases React
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="Clase1.html">Clase 1</a></li>
+                    <li><a class="dropdown-item" href="Clase2.html">Clase 2</a></li>
+                    <li><a class="dropdown-item" href="Clase3.html">Clase 3</a></li>
+                    <li><a class="dropdown-item" href="Clase4.html">Clase 4</a></li>
+                    <li><a class="dropdown-item" href="Clase5.html">Clase 5</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <h4>Este codigo NO es mio. Lo copie de https://mvillalva.github.io/react-2022/, Maximiliano Villalva, para tratar de entender y hacer mi propio codigo.</h4>
+        <main>
+          <h1>Choose what you want to create: </h1>
+          <div class="container text-center center-block mt-4 mb-4">
+           <div class="row">
+            <div class="col">
+            <input type="radio" class="btn-check" name="btnradio" id="video" autocomplete="off">
+            <label class="btn btn-outline-dark" for="video">Video</label>
+          </div> 
+          <div class="col">
+            <input type="radio" class="btn-check" name="btnradio" id="audio" autocomplete="off">
+            <label class="btn btn-outline-dark" for="audio">Audio</label>
+          </div>
+          <div class="col">
+            <input type="radio" class="btn-check" name="btnradio" id="button" autocomplete="off">
+            <label class="btn btn-outline-dark" for="button">Button</label>
+          </div>
+          <div class="col">
+            <input type="radio" class="btn-check" name="btnradio" id="list" autocomplete="off">
+            <label class="btn btn-outline-dark" for="list">List</label>
+          </div>
+        </div>
+        </div>
+        <section id="s_video" class="bg-dark rounded-3 overflow-hidden pb-2 d-none" data-type="config">
+          <h5 class="bg-dark text-light text-center py-1">Video</h5>
+          <form action="" class="row p-2">
+              <div class="col-12 mb-2">
+                  <label for="v_src" class="form-label text-light">Origen</label>
+                  <input id="v_src" class="form-control form-control-sm" type="text" placeholder="Ingrese el origen del video" required="">
+              </div>
+              <div class="col-6 mb-2">
+                  <label for="v_width" class="form-label text-light">Width (opcional)</label>
+                  <input id="v_width" class="form-control form-control-sm" type="number" placeholder="800">
+              </div>
+              <div class="col-6 mb-2">
+                  <label for="v_height" class="form-label text-light">Height (opcional)</label>
+                  <input id="v_height" class="form-control form-control-sm" type="number" placeholder="600">
+              </div>
+              <div class="col-6 mb-2">
+                  <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="v_controls" checked="">
+                  <label class="form-check-label text-light" for="v_controls">
+                      Muestra controles
+                  </label>
+                  </div>                            
+              </div>    
+              <div class="col-6 mb-2">
+                  <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="v_autoplay">
+                      <label class="form-check-label text-light" for="v_autoplay">
+                      Autoplay
+                      </label>
+                  </div>
+              </div>
+              <div class="col-12 mb-2">
+                  <div class="d-grid gap-2">
+                      <button type="submit" name="v_create" id="v_create" class="btn btn-outline-light">Crear</button>
+                  </div>                            
+              </div>
+          </form>
+      </section>
+      <section id="s_audio" class="bg-dark rounded-3 overflow-hidden pb-2 d-none" data-type="config">
+        <h5 class="bg-dark text-light text-center py-1">Audio</h5>
+        <form action="" class="row p-2">
+            <div class="col-12 mb-2">
+                <label for="a_src" class="form-label text-light">Origen</label>
+                <input id="a_src" class="form-control form-control-sm" type="text" placeholder="Ingrese el origen del audio" required="">
+            </div>                            
+            <div class="col-6 mb-2">
+                <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="a_controls" checked="">
+                <label class="form-check-label text-light" for="a_controls">
+                    Muestra controles
+                </label>
+                </div>                            
+            </div>    
+            <div class="col-6 mb-2">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="a_autoplay">
+                    <label class="form-check-label text-light" for="a_autoplay">
+                    Autoplay
+                    </label>
+                </div>
+            </div>
+            <div class="col-12 mb-2">                                
+                <label for="a_volumen" class="form-label text-light">Volumen: <span id="a_vol_number" class="text-warning">100</span></label>
+                <input type="range" class="form-range" min="0" max="100" id="a_volumen" value="100">
+            </div>
+            <div class="col-12 mb-2">
+                <div class="d-grid gap-2">
+                    <button type="submit" name="v_create" id="a_create" class="btn btn-outline-light">Crear</button>
+                </div>                            
+            </div>
+        </form>
+    </section>
+    <section id="s_button" class="bg-dark rounded-3 overflow-hidden pb-2 d-none" data-type="config">
+      <h5 class="bg-dark text-light text-center py-1">Botón</h5>
+      <form action="" class="row p-2">
+          <div class="col-12 mb-2">
+              <label for="b_text" class="form-label text-light">Texto</label>
+              <input id="b_text" class="form-control form-control-sm" type="text" placeholder="Ingrese el texto del botón" required="">
+          </div>
+          <div class="col-6 mb-2">
+              <label for="b_width" class="form-label text-light">Width (opcional)</label>
+              <input id="b_width" class="form-control form-control-sm" type="number" placeholder="50">
+          </div>
+          <div class="col-6 mb-2">
+              <label for="b_height" class="form-label text-light">Height (opcional)</label>
+              <input id="b_height" class="form-control form-control-sm" type="number" placeholder="25">
+          </div>
+          <div class="col-6 mb-2">
+              <div class="mb-3">
+                  <label for="b_color" class="form-label text-light ">Color</label>
+                  <select class="form-select form-select-sm" name="b_color" id="b_color">
+                      <option value="yellow">Amarillo</option>
+                      <option value="blue" selected="">Azul</option>
+                      <option value="white">Blanco</option>
+                      <option value="black">Negro</option>
+                      <option value="red">Rojo</option>
+                      <option value="green">Verde</option>
+                  </select>
+              </div>
+          </div>
+          <div class="col-12 mb-2">
+              <div class="d-grid gap-2">
+                  <button type="submit" name="v_create" id="b_create" class="btn btn-outline-light">Crear</button>
+              </div>                            
+          </div>
+      </form>
+  </section>
+  <section id="s_list" class="bg-dark rounded-3 overflow-hidden pb-2 d-none" data-type="config">
+    <h5 class="bg-dark text-light text-center py-1">Lista de elementos</h5>
+    <form action="" class="row p-2">
+        <div class="col-3 mb-2">
+            <label for="l_elements" class="form-label text-light">Cantidad</label>
+            <input id="l_elements" class="form-control form-control-sm" type="number" required="">
+        </div>
+        <div class="col-9 mb-2">
+            <div class="mb-3">
+                <label for="l_type" class="form-label text-light">Tipo</label>
+                <select class="form-select form-select-sm" name="l_type" id="l_type">
+                    <option value="image">Imagen</option>
+                    <option value="number">Número</option>
+                    <option value="object">Objeto</option>
+                    <option value="string" selected="">Texto</option>
+                </select>
+            </div>
+        </div>
+        <div class="col-12 mb-2">
+            <div class="d-grid gap-2">
+                <button type="submit" name="v_create" id="l_create" class="btn btn-outline-light">Crear</button>
+            </div>                            
+        </div>
+    </form>
+</section>
+<section>
+  <div id="view" class="fs-3 p-2 my-2 bg-danger rounded-3 d-none overflow-auto"></div>
+</section>
+        </main>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+        <script src="../js/clase4.js"></script>
+</body>
+</html>
