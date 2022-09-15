@@ -1,6 +1,6 @@
 # CaC-React
 Repository for a React Classe with Codo a Codo in Buenos Aires, Argentina
 
-See Master branch for the code 
+See Master branch for the code, all the exercises are in the Clases React tab. 
 
-To-Do next : add a structure to the Home page
+
